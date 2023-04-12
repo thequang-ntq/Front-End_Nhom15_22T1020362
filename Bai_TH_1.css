@@ -1,0 +1,155 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* <!-- [Lập trình Front End - Nhóm 15] <22T1020362> - Nguyễn Thế Quang --> */
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0px 10px;
+}
+.group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: 500;
+    padding: 10px;
+}
+.link ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.link ul li{
+    display: block;
+    padding: 10px;
+    padding-top: 16px;
+}
+.link ul li:hover{
+    background-color: yellow;
+}
+.link ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    
+}
+/* ------------------------------------------- */
+.menu{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    padding: 1px 10px;
+    vertical-align: middle;
+}
+.welcome ul{
+    list-style: none;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+}
+.welcome ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 243, 0);
+    padding-bottom: 12px;
+}
+.welcome .hai{
+    background-color: rgb(250, 254, 88);
+}
+.welcome .bon{
+    background-color: rgb(250, 254, 88);
+}
+.welcome ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome ul li a:hover{
+    background-color: rgb(90, 87, 87);
+}
+/* ------------------------------------------------ */
+.sp{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+.image{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    vertical-align: middle;
+    padding-top: 10px;
+}
+.image ul{
+    list-style: none;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+}
+.image ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image .text{
+    display: grid;
+    flex-direction: none;
+    position: absolute;
+    
+}
+.image ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ------------------------------------------ */
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    padding-top: 10px;   
+    background-color: rgb(255, 240, 0);
+    
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 13px;
+}
+.first a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+.second{
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 13px;
+}
+.third{
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: small;
+}
