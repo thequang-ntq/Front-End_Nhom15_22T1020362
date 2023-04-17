@@ -1,0 +1,285 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color:#000;
+}
+/* <!--Lập trình Front - End Nhóm 15 - Nguyễn Thế Quang - 22T1020362  --> */
+/* <!-- Bài thực hành 5 --> */
+:root {
+    --container-width: 1150px;
+    --container-left-width:750px;
+    --container-right-width: 360px;
+    --color-orange: #FAA21B;
+    --color-gray: #646464;
+}
+/* Định dạng này chỉ để test layout */
+body div {
+        /* border:2px solid red;
+        margin:5px;
+        padding:5px; */
+}   
+img {
+    width:100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+}
+.clearfix {
+    clear: both;
+}
+
+.container {
+    position: relative;
+    width: var(--container-width);
+    margin: 0 auto;
+    overflow: auto;
+}
+.container-full {
+    width: 100%;
+    position: relative;
+    overflow: auto;
+}
+.bg-orange {
+    background-image: linear-gradient(var(--color-gray),var(--color-orange));
+}
+.bg-black {
+  background-color: #000;
+}
+
+/* HEADER */
+#header {    
+    padding: 5px 0 5px 0;
+}
+#logo {
+    float: left;
+    width: 10%;
+
+}
+#hashtag {
+    float: right;
+    width: 80%;
+    margin-top: 30px;
+}
+#hashtag ul {    
+    float: right;
+    list-style: none;
+}
+#hashtag li {
+    display: inline-table;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 5px ;
+}
+#hashtag span {
+  color: var(--color-orange);
+  font-size: 0.8rem;
+}
+
+/* MENU */
+#menu {
+    
+}
+#menu > ul {
+    
+}
+#menu > ul > li {
+    display: inline-table;
+    width: 16%; 
+    text-align: center;
+    line-height: 40px;
+}
+#menu > ul > li:hover {
+    background-color: var(--color-orange);
+}
+#menu a {
+    color: white;
+}
+
+/* CONTENT LAYOUT */
+.content-left {
+    float: left;
+    width: var(--container-left-width);
+    overflow: auto;
+}
+.content-right {
+    float: right;
+    width: var(--container-right-width);
+    overflow: auto;
+   
+}
+.content-left, .content-right{
+    margin: 0.5%;
+}
+.row {
+    overflow: auto;
+    
+}
+.column-1, .column-2, .column-3,.column-1-2 {
+    float: left;
+    
+
+}
+.column-1-2{
+    padding-left: 10px;
+    width: 33.3%;
+}
+.column-1 {
+    padding: 10px 10px 10px 0;
+    margin-top: 20px;
+    width: 33.3%;
+}
+.column-2 {
+    padding-right: 10px;
+    width: 66.6%; 
+}
+.column-3 {
+   width:  100%;
+   
+}
+
+
+/* FOOTER */
+#footer {
+    border-top: 3px solid var(--color-orange);
+     min-height: 300px;
+}
+
+/* ANOTHER STYLES */
+.section-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.4rem;
+    border-left: 4px solid var(--color-orange);
+    margin: 10px 0 20px 5px;
+    padding-left: 10px;
+}
+.img-h300{
+    height: 277px;
+}
+.post{
+    padding: 2px;
+}
+.post-title-lg{
+    padding-left: 5px;
+    font-size: 1.85rem;
+    font-weight: 500;
+}
+.post-images{
+    padding: 5px;
+}
+.post-title{
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 5px 5px 5px 5px;
+}
+.post-title-1{
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0 40px 5px 5px;
+}
+.post-1{
+    float: left;
+}
+.post-1-images{
+    padding: 10px;
+    float: left;
+    width: 33.3%;
+    margin-left: -10px;
+}
+
+.post-1-title{
+    font-size: 1.25rem;
+    padding: 5px;
+    margin-top: 5px;
+    }
+.post-2-title{
+    font-size: 0.95rem;
+    padding: 5px;
+    }
+/* .content-right{
+      padding: 5px;
+    } */
+.content-right .column-3 {
+    padding: 5px;
+}   
+.post-4-title{
+    font-size: 1.15rem;
+    width: 100%;
+    margin-left: -4px;
+}
+.post-5-title{
+    font-size: 0.9rem;
+    padding: 5px;
+    margin-left: -10px;
+}
+.post-6-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 18px;
+    margin-right: 15px;
+    float: right;
+    width: 66.6%;
+}
+.post-6-images{
+    margin-left: 5px;
+    width: 333px;
+}
+.post-7-images{
+    float: left;
+    width: 100px;
+    margin-top: 15px;   
+}
+.post-7-images img {
+    width: 100%;
+}
+.post-8-images {
+    width: 97%;
+    transform: scale(0.95);
+    margin-top: -5px;
+}
+.logo-1{
+    transform: scale(0.45);
+    float: left;
+    width: 33.3%;
+    margin-top: -30px;
+    margin-left: -110px;
+    margin-bottom: -70px;
+}
+.INFO {
+    color: white;   
+    width: 33.3%;
+    margin: auto;
+    margin-top: 45px;
+    margin-left: 350px;
+}
+h1 {
+    color: white;
+    line-height: 2.5;
+}
+a {
+    color: white;
+    line-height: 1;
+    font-size: 0.9rem;
+}
+.CONTACT{
+    float: right;
+    color: white;
+    width: 33.3%;
+    margin: auto;
+    margin-top: -140px;
+}
+.COPYRIGHT{
+    color: white;
+    margin-left: 0;
+    margin-top: 10px;
+    border-top: 1px solid var(--color-gray);
+    padding-top: 10px;
+}
+.COPYRIGHT a {
+    font-size: 1.1rem;
+}
