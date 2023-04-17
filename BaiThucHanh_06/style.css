@@ -1,0 +1,341 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+/* <!--Lập trình Front - End Nhóm 15 - Nguyễn Thế Quang - 22T1020362  -->
+<!-- Bài thực hành 6 --> */
+:root {
+    --container-width: 1100px;
+    --section-width: 985px;
+    --color-darkblue: #112141;
+    --color-orange: #BA9066;
+    --color-darkred: #B70F08;
+    --color-gray: #646464;
+}
+/*div ,section{ 
+      outline: 1px solid green;
+} */
+body {
+    min-height: 1200px;
+    background-image: url("/images/bg-top.jpg"), url("/images/bg-bottom.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top center, bottom center;
+    background-color: #f2f2f2;
+}
+a {
+    text-decoration: none;
+}
+
+a :hover {
+    opacity: 0.8;
+}
+
+.container {
+    position: relative;
+    width: var(--container-width);
+    margin: 0 auto;
+    overflow: auto;
+}
+
+section {
+    position: relative;
+    width: var(--section-width);
+    margin: 0 auto;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#menu .space {
+    width: 200px !important;
+}
+
+#menu a {
+    color: #f2f2f2;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.1rem;
+}
+
+#menu>li {
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    padding-right: 10px;
+}
+
+#memu>li:last-child {
+    border-right: none;
+}
+
+#section-1 {
+    margin-top: 500px;
+    display: grid;
+    grid-template-columns: 240px 490px 250px;
+    column-gap: 8px;
+    background-color: var(--color-darkblue);
+    border: 2px solid var(--color-darkblue);
+}
+
+#long-den {
+    position: absolute;
+    top: 0px;
+    left: -80px;
+    z-index: 999;
+}
+
+.left-buttons {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 125px 62px 62px;
+    word-wrap: 2px;
+}
+
+#tai-game {
+    background-image: url(/images/btn_taigame.jpg);
+}
+
+#dang-ky,
+#nap-the {
+    background-image: url(/images/buttons-left.png);
+}
+
+#dang-ky {
+    background-position: 0 -2px;
+}
+
+#dang-ky:hover {
+    background-position: -248px -2px;
+}
+
+#nap-the {
+    background-position: 0 -66px;
+}
+
+#nap-the:hover {
+    background-position: -248px -66px;
+    opacity: 1;
+}
+
+.right-buttons {
+    display: grid;
+    grid-template-columns: 113px auto;
+    grid-template-rows: 103px 103px 38px;
+    gap: 5px;
+}
+
+#giang-ho,
+#ho-tro,
+#nap-vang,
+#nap-vip {
+    background-image: url(/images/buttons-right.png);
+    background-repeat: no-repeat;
+}
+
+#giang-ho {
+    background-position: 0 -8px;
+}
+
+#ho-tro {
+    background-position: -118px -8px;
+}
+
+#nap-vang {
+    background-position: 0 -120px;
+}
+
+#nap-vip {
+    background-position: -118px -120px;
+}
+
+#hotline {
+    background-image: url(/images/hotline.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-column: 1/3;
+}
+
+#section-2 {
+    display: grid;
+    grid-template-columns: 740px 230px;
+    column-gap: 8px;
+    margin-top: 5px;
+}
+
+#section-2-right-buttons {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, 52px);
+    background-color: var(--color-darkblue);
+    row-gap: 5px;
+}
+
+#section-2-right-buttons>a {
+    background-image: url(/images/links-right.png);
+}
+
+#bao-dien {
+    background-position: 0 -2px;
+}
+
+#mon-phai {
+    background-position: 0 -60px;
+}
+
+#tan-thu {
+    background-position: 0 -120px;
+}
+
+#vo-hoc {
+    background-position: 0 -180px;
+}
+
+#pvc-pet {
+    background-position: 0 -220px;
+}
+
+#section-2-top-buttons {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 85px;
+    gap: 3px;
+    
+}
+
+#section-2-top-buttons>a {
+    background-image: url(/images/cuuamlenh-vip-giftcode.png);
+ 
+}
+
+#cuu-am-lenh {
+    background-position: 0 -82px;
+}
+
+#vinh-danh-vip {
+    background-position: -248px 0;
+}
+
+#nap-vip-code {
+    background-position: -500px 0;
+}
+
+
+.post {
+    margin-top: 1px;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-around;    
+    background-image: url("/images/news-header-bg.png");
+    height: 50px;
+    padding: 10px;
+}
+
+.post-category a {
+    color: var(--color-orange);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.1rem;
+}
+
+.post-category>li {
+    padding-top: 10px;
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.post-category>li:first-child {
+    border-right: none;
+}
+
+.post-body {
+    background-color: #f2f2f2;  
+    padding: 5px;    
+    border: 5px solid var(--color-darkblue);
+}
+
+.post-item {
+    padding: 10px;
+}
+
+.post-item img {
+    border: 5px solid var(--color-orange);
+    width: 20%;
+}
+
+.post-content {
+    display: inline-block;
+    width: 75%;
+    padding-left: 10px;
+    vertical-align: top;
+}
+
+.post-content h1 {
+    color: var(--color-darkred);
+    font-size: 1.6rem;
+}
+
+.post-content h1 {
+    border-left: 5px solid var(--color-darkred);
+    margin: 10px;
+    padding: 5px;
+}
+
+.small{
+    color: var(--color-gray);
+    font-size: 0.95rem;
+    font-style: italic;
+    padding: 5px;
+}
+
+.post-links {
+    text-align: right;
+}
+
+.post-links a {
+    display: inline-block;
+    border: 4px solid var(--color-gray);
+    padding: 10px 10px;
+    margin: 5px;
+    background-color: var(--color-darkblue);
+    color: var(--color-gray);
+}
+
+.post-links a:last-child {
+    margin-right: 0;
+}
+
+.right-content {
+    border: 5px solid #112141;
+    margin-bottom: auto;
+}
+
+#footer-info {
+    text-align: center;
+}
+
+#footer-info>p {
+    line-height: 2.2;
+}
+#footer-logo{
+    padding-top: 80px;
+    
+}
+#footer-info{
+    padding-bottom: 30px;
+}
+.post-category li:first-child a{
+    color: #fff;
+}
+#footer-info a{
+    color: black;
+}
+.post-content p{
+    color: #646464;
+}
+#footer-logo img{
+    margin: -30px;
+}
