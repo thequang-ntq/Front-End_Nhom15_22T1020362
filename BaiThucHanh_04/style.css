@@ -1,0 +1,335 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* <!--Lập trình Front - End Nhóm 15 - Nguyễn Thế Quang - 22T1020362 - Ngày 13/04/2023 --> */
+/* <!-- Bài thực hành 4 --> */
+
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    background-color: white;
+    padding: 3% 5%;
+}
+.header .header-right{
+    display: flex;
+    flex-direction: column;
+}
+.header .header-right .header-right-1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: black;
+    font-size: 0.95rem;
+}
+.header .header-right .header-right-1 ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.header .header-right .header-right-1 ul li{
+    display: block;
+    padding-top: 1%;
+    padding-left: 40px;
+}
+.header .header-right .header-right-1 ul li:hover{
+    background-color: yellow;
+}
+.header .header-right .header-right-1 ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    
+}
+.header .header-right .header-right-1 .h1-1{
+    padding-left: 150px;
+    border-color: grey;
+    padding-top: 8px;
+}
+.header .header-right .header-right-1 input{
+    color: grey;
+    padding-left: 7px;
+    padding-right: 105px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-color: none;
+}
+.header .header-right .header-right-2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: black;
+    font-size: 0.95rem;
+    background-color: rgb(253, 143, 40);
+    padding-top: 2%;
+}
+.header .header-right .header-right-2 ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    vertical-align: middle;
+    align-items: left;
+    text-align: center;
+    margin-bottom: 2%;
+    margin-right: 39.6%;
+}
+.header .header-right .header-right-2 ul li{
+    display: block;
+    /* padding-top: 2%; */
+    padding-left: 42px;
+    /* vertical-align: middle; */
+    align-items: left;
+    text-align: center;
+}
+.header .header-right .header-right-2 ul li:hover{
+    background-color: blue;
+}
+.header .header-right .header-right-2 ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    
+}
+.header .body{
+    padding-top: 1%;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    padding-bottom: 2%;
+}
+.header .body1{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2%;
+}
+.header .body1 .body1-2{
+    display: flex;
+    flex-direction: column;
+}
+.header .body1 .body1-2 .body1-2-a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 2;
+}
+.header .body2{
+    display: flex;
+    flex-direction: row;
+}
+.header .body2 .body2-1{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.7%;
+}
+
+.header .body2 .body2-2{
+    display: flex;
+    flex-direction: column;
+    padding-top: 0%;
+    word-spacing: 0px;
+    font-size: 0.8rem;
+}
+.header .body2 .body2-1 .body-phu{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.header .body2 .body2-1 .body-chu{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    padding-top: 7%;
+    margin-left: -25%;
+    
+}
+.footer{
+    background-color: rgb(53, 53, 53);
+    display: flex;
+    flex-direction: row;
+    justify-content: none;
+    color: white;
+    font-size: 0.9rem;
+    padding-top: 4%;
+    word-wrap: break-word;
+}
+.footer1{
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    color: rgb(212, 211, 211);
+    padding-left: 9%;
+    word-spacing: 1px;
+}
+.footerx{
+    display: flex;
+    flex-direction: row;
+   
+}
+.header .header-right .header-right-2 .images{
+    position: absolute;
+    left: 76.4%;
+    top: 16.4%; 
+    color: rgb(253, 143, 40); 
+    font-weight: 500; 
+    font-size: 1.5rem; 
+    border: 5.5px solid rgb(241, 209, 176); 
+    border-color: rgb(241, 209, 176) ; 
+    background-color: rgb(241, 209, 176);
+    border-bottom-left-radius: 14%;
+    border-bottom-right-radius: 14%;
+    border-top-right-radius: 14%;
+    border-top-left-radius: 14%;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+.header .header-right .header-right-2 .images1{
+    position: absolute;
+    left: 148%;
+    top: -14%; 
+    color: rgb(253, 143, 40); 
+    font-weight: 500; 
+    font-size: 1.5rem; 
+    border: 13px solid rgb(241, 209, 176); 
+    border-color: rgb(241, 209, 176) ; 
+    background-color: rgb(241, 209, 176);
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    border-top-right-radius: 15%;
+    border-top-left-radius: 15%;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+.header .header-right .header-right-2 .images2{
+    position: absolute;
+    left: 302%;
+    top: -14%; 
+    color: rgb(253, 143, 40); 
+    font-weight: 500; 
+    font-size: 1.5rem; 
+    border: 13px solid rgb(241, 209, 176); 
+    border-color: rgb(241, 209, 176) ; 
+    background-color: rgb(241, 209, 176);
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    border-top-right-radius: 15%;
+    border-top-left-radius: 15%;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+.header .header-right .header-right-2 .images3{
+    position: absolute;
+    left: 459%;
+    top: -14%; 
+    color: rgb(253, 143, 40); 
+    font-weight: 500; 
+    font-size: 1.5rem; 
+    border: 13px solid rgb(241, 209, 176); 
+    border-color: rgb(241, 209, 176) ; 
+    background-color: rgb(241, 209, 176);
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    border-top-right-radius: 15%;
+    border-top-left-radius: 15%;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+.footer .footer1 .imagess{
+    position: absolute;
+    left: 64.8%;
+    top: 310.4%; 
+    color: white; 
+    font-weight: 500; 
+    font-size: 1.5rem; 
+    border: 4px solid rgb(61, 61, 61); 
+    border-color: rgb(61, 61, 61); 
+    background-color: rgb(61, 61, 61);
+    border-bottom-left-radius: 14%;
+    border-bottom-right-radius: 14%;
+    border-top-right-radius: 14%;
+    border-top-left-radius: 14%;
+    border-width: 4%;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+.footer .footer1 .imagess1{
+    position: absolute;
+    left: 68.8%;
+    top: 310.4%; 
+    color: white; 
+    font-weight: 500; 
+    font-size: 1.5rem; 
+    border: 13px solid rgb(61, 61, 61); 
+    border-color: rgb(61, 61, 61); 
+    background-color: rgb(61, 61, 61);
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    border-top-right-radius: 15%;
+    border-top-left-radius: 15%;
+    border-width: 4%;
+}
+.footer .footer1 .imagess2{
+    position: absolute;
+    left: 72.8%;
+    top: 310.4%; 
+    color: white; 
+    font-weight: 500; 
+    font-size: 1.5rem; 
+    border: 4px solid rgb(61, 61, 61); 
+    border-color: rgb(61, 61, 61); 
+    background-color: rgb(61, 61, 61);
+    border-bottom-left-radius: 14%;
+    border-bottom-right-radius: 14%;
+    border-top-right-radius: 14%;
+    border-top-left-radius: 14%;
+    border-width: 4%;
+    padding-right: 0.8%;
+    padding-left: 0.8%;
+    padding-bottom: 0.1%;
+}
+.footer .footer1 .imagess3{
+    position: absolute;
+    left: 76.8%;
+    top: 310.4%; 
+    color: white; 
+    font-weight: 500; 
+    font-size: 1.5rem; 
+    border: 13px solid rgb(61, 61, 61); 
+    border-color: rgb(61, 61, 61); 
+    background-color: rgb(61, 61, 61);
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    border-top-right-radius: 15%;
+    border-top-left-radius: 15%;
+    border-width: 4%;   
+}
+.footer .footer1 .imagess4{
+    position: absolute;
+    left: 80.8%;
+    top: 310.4%; 
+    color: white; 
+    font-weight: 500; 
+    font-size: 1.5rem; 
+    border: 4px solid rgb(61, 61, 61); 
+    border-color: rgb(61, 61, 61); 
+    background-color: rgb(61, 61, 61);
+    border-bottom-left-radius: 14%;
+    border-bottom-right-radius: 14%;
+    border-top-right-radius: 14%;
+    border-top-left-radius: 14%;
+    border-width: 4%;
+    padding-right: 0.7%;
+    padding-left: 0.7%;
+    padding-bottom: 0.1%;
+}
+
