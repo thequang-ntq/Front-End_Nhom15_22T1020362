@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#container{
+    background: linear-gradient(green, violet);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding : 0% 5%;
+}
+#container .cap1{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+
+}
