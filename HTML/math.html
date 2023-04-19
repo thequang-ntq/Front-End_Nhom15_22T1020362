@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài học về JS</title>
+    <link rel="stylesheet" href="C:\Users\Admin\Desktop\Website\CSS\math.css">
+    <script src="C:\Users\Admin\Desktop\Website\javascript\script.js"></script> <!-- <-- external -->
+</head>
+<body>
+    <div>--- Xin hãy nhập giá trị ---</div>
+    <div>----------------------------</div>
+    <form>
+        <label for="num1">Radius 1:</label>
+        <input type="number" id="num1" name="num1"><br>
+
+        <label for="num2">Radius 2:</label>
+        <input type="number" id="num2" name="num2"><br>
+        <input type="button" value="Add" onclick="add()">
+        <input type="button" value="Subtract" onclick="subtract()">
+        <input type="button" value="Multi" onclick="multiply()">
+        <input type="button" value="Divide" onclick="divide()">
+        <input type="button" value="Area" onclick="getArea()">
+        <input type="button" value="CV" onclick="getCV()">
+    </form>
+    <!-- <button type="button" onclick="getValue()">OK</button> -->
+    <button onclick="alert('Hello World !')">Hello</button> <!-- internal. Trong onclick la mot lenh cua javascript -->
+    <!-- <button onclick="add(5,10)">Add</button> -->
+    <!-- <button onclick="getCv(radius)">Chu vi</button> -->
+    <!-- <button onclick="getArea(radius)">Area of Circle</button> -->
+    <!-- <p id="chuvi"></p>
+    <p id="result"></p> -->
+    <!-- javascript noi -->
+    <!-- <script>    
+        function add(a, b){
+            let total = a + b;
+            let pElement = document.getElementById('result');
+            pElement.innerHTML = "Tổng là : <b>" + total +  "</b>";
+            alert("Tổng là: " + total);
+        }
+    </script> -->
+</body>
+</html>
