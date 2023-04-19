@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:rgba(231, 226, 226, 0.486);
+    padding: 0px 10px;
+    padding-block-start: 10px;
+    padding-block-end: 10px;
+}
+.form-control{
+    padding-right: 70px;
+    padding-left: 7px;
+    padding-block-start: 6px;
+    padding-block-end: 6px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border: none;
+    color:rgba(196, 189, 189, 0.486);
+    font-weight: 600;
+}
+.Send{
+    background-color: blue;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-block-start: 6px;
+    padding-block-end: 6px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border: none;
+}
+
+.container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container > div{
+    min-height: 50px;
+}
+.ls-icon{
+    min-width: 200px;
+    background-color: white;
+    padding-top: 18px;
+    border: 2px solid rgba(231, 226, 226, 0.486);
+    border-left: 8px;
+    border-right: none;
+}
+.ls-icon ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around ;
+    padding: 0;
+}
+.ls-icon ul li{
+    font-size: 2rem;
+}
+.text{
+    background-color: white;
+    border: 2px solid rgba(231, 226, 226, 0.486);
+    border-left: none;
+    border-right: none;
+    display: flex;
+    flex-direction: row;
+    flex-grow:2;
+    
+    padding-top: 1px;
+}
+.like{
+    background-color: white;
+    border: 2px solid rgba(231, 226, 226, 0.486);
+    border-left: none;
+    border-right: 10px;
+    padding-right: 32px;
+    padding-top:20px;
+}
+.form-control-2{
+    background-color: rgba(230, 225, 225, 0.486);
+    display:unset;
+    font-size: 15px;
+    padding-bottom: 20px;
+    padding-right: 825px;
+    padding-left: 7px;
+    padding-block-start: 6px;
+    padding-block-end: 6px;
+    /* border-top-right-radius: 15px; */
+    border-bottom-left-radius: 15px;
+    /* border-bottom-right-radius: 15px; */
+    border-top-left-radius: 15px;
+    /* background-color: rgba(196, 189, 189, 0.486); */
+    vertical-align: center;
+    position: relative;
+    align-items: center;
+
+    border: none;
+    color:black;
+    font-weight: 600;
+}
