@@ -8,8 +8,8 @@ html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#main #content ul li a :hover {
-    background-color: linear-gradient(blue, yellow);
+#main #content #list li a :hover {
+    background: linear-gradient(blue, yellow);
 }
 
 .backgr {
