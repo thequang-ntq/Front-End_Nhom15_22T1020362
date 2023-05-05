@@ -1,0 +1,247 @@
+* {    
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;    
+}
+/* <!--Lập trình Front - End Nhóm 15 - Nguyễn Thế Quang - 22T1020362 - Ngày 13/04/2023 -->
+<!-- Bài thực hành 4 --> */
+html {
+    font-size: 16px;
+}
+
+:root {
+    --container-full-width: 100%;
+    --container-normal-width: 1200px;
+    --bg-primary-color:#011C38;       
+    --text-primary-color:#011C38; 
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color:var(--text-primary-color);    
+}
+
+a {
+    color:var(---text-primary-color);
+    text-decoration: none;        
+}
+
+a:hover {
+    opacity: 0.6;
+}
+.bg-gray {
+    background-color: #c0c0c0;
+    color:var(--text-primary-color);
+}
+.bg-orange {
+    background-color: #EA6645;
+    color:#fff;
+}
+.bg-darkblue {
+    background-color: #012951;
+    color:#fff;
+}
+.line-gray-after::after {
+    background-color: #ccc;
+    bottom: -10px;
+    content: "";
+    height: 2px;
+    left: 0;
+    width: 50px;
+    position: absolute;
+    z-index: 0
+}
+.line-dark-after::after {
+    width:50px;
+    height:2px;
+    content:"";
+    position: absolute;
+    left:0;
+    bottom:-10px;
+    background-color: #345474;  
+}
+.container-full {
+    width: var(--container-full-width);
+}
+.container {
+    width:var(--container-normal-width);
+    margin:auto;
+}
+.header {    
+    background-image: url("../images/background.png");
+    color:#fff;    
+}
+.header a {
+    color:#fff;
+}
+.header li {
+    display: inline-table;
+}
+.header li + li {
+    margin-left: 20px;
+}
+.header-top {
+    height:35px;
+    line-height: 35px;
+    background-color: rgba(1, 28, 56, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.header-top-content {
+    display:flex;
+    justify-content: space-between;
+}
+.header-bottom {
+    height: 100px;
+    line-height: 100px;
+}
+.header-bottom-content {
+    display: flex;
+    justify-content: space-between;
+}
+.header-bottom-name {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.header-bottom-menu {
+    font-size: 1.1em;
+}
+.banner {
+    height:320px;
+    background-color:var(--bg-primary-color);
+}
+.banner-content {
+    display: flex;       
+}
+.banner-image {
+    position: relative;
+    width:50%;
+    height:320px;
+}
+.banner-image > img {    
+    position: absolute;
+    top:30px;
+}
+.banner-connect {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50px 30px 30px 30px;
+    row-gap: 5px;
+    column-gap: 20px;
+    padding: 30px 0 0 20px;
+    width:50%;    
+    color:#fff;
+}
+.banner-connect-title {
+    grid-column: 1/3;
+    font-size: 2.2em;
+}
+.banner-connect-submit {
+    grid-column: 1/3;
+    text-align: right;
+}
+.banner-connect input {
+    width:100%;
+    height:30px;
+    background-color:#1B334C;
+    border:none;
+    font-size:0.8em;
+    color:#fff;
+    padding:3px;
+}
+.banner-connect button {
+    border:2px solid #EA6645;
+    color:#EA6645;
+    padding:5px 10px 5px 10px;
+    background:transparent;
+}
+.content-title {
+    font-size: 2em;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 35px;
+}
+.content-body {
+    line-height: 23px;
+    text-align: justify;
+}
+.main-content {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    margin-top:60px;
+}
+.event {
+    display: grid;
+    grid-template-columns: 70px auto;    
+    margin-bottom: 10px;    
+}
+.event-time {
+    width:70px;
+    height:70px;        
+    color: #fff;
+    position: relative;
+    text-align: center;
+}
+.event-month {
+    text-transform: uppercase;    
+    font-weight: 600;
+    font-size: 1.1em;        
+}
+.event-day {
+    position: relative;
+    font-size: 4.5em;
+    font-weight: bold;
+    bottom:-20px;
+    right:-10px;
+}
+.event-content {
+    padding:0 10px 0 10px;
+}
+.event-subtitle {
+    color:#646464;
+}
+.news {
+    border-bottom:1px solid #ccc;
+    padding:0 0 20px 0;
+    margin:0 20px 10px 0;
+}
+.news-time {
+    color:#646464;
+}
+.news-title {
+    padding:0 0 0 10px;
+}
+.category-content {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    margin-top:40px;
+    padding: 30px 50px 30px 50px;
+}
+.category-content-body ul {
+    list-style: none;
+}
+.gallery-content {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-top: 40px;
+    height: 400px;
+}
+
+.footer {
+    height:380px;
+    background-image: url("../images/background.png");
+    display: grid;
+    grid-template-rows: auto 50px;
+    color:#fff;
+}
+.footer a {
+    color:#fff;
+}
+.footer-bottom {
+    background-color: rgba(1, 28, 56, 0.8);
+}
+.footer-top-content {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    padding:40px 0 40px 0;
+}
